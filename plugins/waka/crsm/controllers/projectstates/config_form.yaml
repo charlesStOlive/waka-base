@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Project State
+
+# Model Form Field configuration
+form: $/waka/crsm/models/projectstate/fields.yaml
+
+# Model Class name
+modelClass: Waka\Crsm\Models\ProjectState
+
+# Default redirect location
+defaultRedirect: waka/crsm/projectstates
+
+# Create page
+create:
+    title: Create Project State
+    redirect: waka/crsm/projectstates/update/:id
+    redirectClose: waka/crsm/projectstates
+
+# Update page
+update:
+    title: Edit Project State
+    redirect: waka/crsm/projectstates
+    redirectClose: waka/crsm/projectstates
+
+# Preview page
+preview:
+    title: Preview Project State

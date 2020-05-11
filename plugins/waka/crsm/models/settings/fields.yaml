@@ -1,0 +1,25 @@
+tabs:
+    stretch: true
+    defaultTab: waka.crsm::lang.settings.choose_default
+    fields:
+        country:
+            label: waka.crsm::lang.settings.country
+            comment: waka.crsm::lang.settings.country_com
+            type: dropdown
+            options: listCountrys
+        sector:
+            label: waka.crsm::lang.settings.sector
+            comment: waka.crsm::lang.settings.sector_com
+            type: dropdown
+            options: listSectors
+        # type:
+        #     label: waka.crsm::lang.settings.type
+        #     comment: waka.crsm::lang.settings.type_com
+        #     type: dropdown
+        #     options: listTypes
+        content_codes:
+            label: waka.crsm::lang.settings.content_codes
+            comment: waka.crsm::lang.settings.content_codes_com
+            type: taglist
+            mode: array
+

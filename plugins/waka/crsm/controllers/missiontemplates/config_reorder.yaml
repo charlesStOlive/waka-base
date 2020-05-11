@@ -1,0 +1,17 @@
+# ===================================
+#  Reorder Behavior Config
+# ===================================
+
+# Reorder Title
+title: Reorder missiontemplates
+
+# Attribute name
+nameFrom: name
+
+# Model Class name
+modelClass: Waka\Crsm\Models\MissionTemplate
+
+# Toolbar widget configuration
+#toolbar:
+    # Partial for toolbar buttons
+    # buttons: reorder_toolbar

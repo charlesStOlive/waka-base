@@ -1,0 +1,10 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: waka.crsm::lang.projectstate.name
+    slug:
+        label: waka.utils::lang.global.slug
+        preset: name

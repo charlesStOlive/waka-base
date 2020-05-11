@@ -1,0 +1,15 @@
+missions:
+    label: waka.crsm::lang.project.missions
+    view:
+        list: $/waka/crsm/models/mission/columns_project.yaml
+        defaultSort: 
+            column: sort_order
+            direction: asc
+        toolbarButtons: create|delete|addtemplate|reorder
+    manage:
+        showSearch: true
+        recordsPerPage: 10
+        form: $/waka/crsm/models/mission/fields.yaml
+        # scope: notClosed
+    # pivot:
+    #     form: $/waka/crsm/models/mission/fields_pivot.yaml

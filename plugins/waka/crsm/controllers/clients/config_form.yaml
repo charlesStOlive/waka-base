@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Client
+
+# Model Form Field configuration
+form: $/waka/crsm/models/client/fields.yaml
+
+# Model Class name
+modelClass: Waka\Crsm\Models\Client
+
+# Default redirect location
+defaultRedirect: waka/crsm/clients
+
+# Create page
+create:
+    title: Create Client
+    redirect: waka/crsm/clients/update/:id
+    redirectClose: waka/crsm/clients
+
+# Update page
+update:
+    title: Edit Client
+    redirect: waka/crsm/clients
+    redirectClose: waka/crsm/clients
+
+# Preview page
+preview:
+    title: Preview Client

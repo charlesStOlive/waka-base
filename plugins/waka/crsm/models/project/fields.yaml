@@ -1,0 +1,137 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    is_ex@create:
+        label: waka.utils::lang.global.is_ex
+        span: auto  
+        type: checkbox
+        default: 0
+    name@create:
+        label: waka.crsm::lang.project.name
+    
+    client@create:
+        label: waka.crsm::lang.project.client
+        type: relation
+        placeholder: waka.crsm::lang.project.client_placeholder
+
+    contact@create:
+        label: waka.crsm::lang.project.contact
+        type: dropdown
+        placeholder: waka.crsm::lang.project.contact
+        options: listContacts
+        dependsOn: client
+    
+    cp@create:
+        label: waka.crsm::lang.project.cp
+        type: relation
+        placeholder: waka.crsm::lang.project.cp_placeholder
+        select: first_name
+    
+    project_state:
+        label: waka.crsm::lang.project.project_state
+        type: balloon-selector
+        default: 1
+        options: listProjectState
+
+    description@create:
+        type: richeditor
+        tab: waka.crsm::lang.project.description
+
+tabs:
+    icons:
+        waka.crsm::lang.project.description: icon-briefcase
+        waka.crsm::lang.project.team: icon-users
+        waka.crsm::lang.project.brief: icon-info-circle
+        waka.crsm::lang.project.crea: icon-magic
+    
+    fields:
+        name@update:
+            label: waka.crsm::lang.project.name
+            tab: waka.crsm::lang.project.description
+
+        missions@update:
+            type: partial
+            path: field_missions
+            tab: waka.crsm::lang.project.description
+
+        description@update:
+            label: waka.crsm::lang.project.description
+            type: richeditor
+            tab: waka.crsm::lang.project.brief
+
+        picture_1@update:
+            tab: waka.crsm::lang.project.crea
+            label: waka.crsm::lang.client.picture
+            type: cloudifileupload
+            mode: image
+            thumbOptions:
+                mode: fit
+            imageWidth: 300
+            imageHeight: 150
+            span: storm
+            cssClass: col-sm-4 col-xs-12
+        picture_2@update:
+            tab: waka.crsm::lang.project.crea
+            label: waka.crsm::lang.client.picture
+            type: cloudifileupload
+            mode: image
+            thumbOptions:
+                mode: fit
+            imageWidth: 300
+            imageHeight: 150
+            span: storm
+            cssClass: col-sm-4 col-xs-12
+        picture_3@update:
+            tab: waka.crsm::lang.project.crea
+            label: waka.crsm::lang.client.picture
+            type: cloudifileupload
+            mode: image
+            thumbOptions:
+                mode: fit
+            imageWidth: 300
+            imageHeight: 150
+            span: storm
+            cssClass: col-sm-4 col-xs-12
+        montages_list@update:
+            tab: waka.crsm::lang.project.crea
+            label: waka.crsm::lang.client.montage_list
+            type: montagelist
+            span: full
+
+        client@update:
+            label: waka.crsm::lang.client.name
+            type: relation
+            placeholder: waka.crsm::lang.project.client_placeholder
+            tab: waka.crsm::lang.project.team
+
+        contact@update:
+            label: waka.crsm::lang.project.contact
+            type: dropdown
+            placeholder: waka.crsm::lang.project.contact
+            options: listContacts
+            tab: waka.crsm::lang.project.team
+        
+        cp@update:
+            label: waka.crsm::lang.project.cp
+            type: relation
+            placeholder: waka.crsm::lang.project.cp_placeholder
+            select: first_name
+            tab: waka.crsm::lang.project.team
+        nb_user_pot@update:
+            tab: waka.crsm::lang.project.team
+            label: waka.crsm::lang.project.nb_user_pot
+            span: auto 
+        is_ex@update:
+            tab: waka.crsm::lang.project.team
+            label: waka.utils::lang.global.is_ex
+            span: auto  
+            type: checkbox
+            default: 0
+
+        
+        
+        
+
+ 

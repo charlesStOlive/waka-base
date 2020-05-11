@@ -1,0 +1,25 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id: 
+        label: ID
+        invisible: true
+        width: 20px
+    sort_order:
+        label: waka.utils::lang.global.sort_order
+        invisible: true
+    name:
+        label: waka.crsm::lang.mission.name
+        searchable: true
+    qty:
+        label: waka.crsm::lang.mission.qty
+    total:
+        label: total
+        type: waka-calcul
+        var1: 2
+        operator: add
+        var2: 10
+    amount:
+        label: waka.crsm::lang.mission.unit_amount

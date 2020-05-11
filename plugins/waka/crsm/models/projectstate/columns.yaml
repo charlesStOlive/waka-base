@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id: 
+        label: ID
+        invisible: true
+        width: 20px
+    sort_order:
+        label: waka.utils::lang.global.sort_order
+        invisible: true
+    
+    name:
+        label: waka.crsm::lang.projectstate.name
+        searchable: true
+    updated_at:
+        label: waka.utils::lang.global.updated_at
+        type: timetense

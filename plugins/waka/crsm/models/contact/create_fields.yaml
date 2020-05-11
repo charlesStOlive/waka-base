@@ -1,0 +1,30 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    is_ex:
+        label: waka.utils::lang.global.is_ex
+        span: auto  
+        type: checkbox
+        default: 0
+    civ:
+        label: waka.crsm::lang.contact.civ
+        type: balloon-selector
+        default: 1 
+    name:
+        label: waka.crsm::lang.contact.name
+        span: auto
+
+    surname:
+        label: waka.crsm::lang.contact.surname
+        span: auto
+
+    email:
+        label: waka.crsm::lang.contact.email
+        span: auto
+
+    client:
+        type: relation
+        label: waka.crsm::lang.client.name
+        placeholder: waka.crsm::lang.contact.plaeholder

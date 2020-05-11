@@ -1,0 +1,31 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id: 
+        label: ID
+        invisible: true
+        width: 20px
+    action:
+        type: waka-btn-actions
+        icon: icon-wrench
+        clickable: false
+        searchable: false
+        sortable: false
+        width: 25px
+    name:
+        label: waka.crsm::lang.contact.name
+        searchable: true
+    surname:
+        label: waka.crsm::lang.contact.surname
+        searchable: true
+    client_name:
+        label: waka.crsm::lang.client.name
+        searchable: true
+        relation: client
+        select: name
+    
+    updated_at:
+        label: waka.utils::lang.global.updated_at
+        type: timetense

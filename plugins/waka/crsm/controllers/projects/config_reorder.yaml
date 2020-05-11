@@ -1,0 +1,20 @@
+# ===================================
+#  Reorder Behavior Config
+# ===================================
+
+# Reorder Title
+title: Reorder Mission
+
+# Attribute name
+nameFrom: name
+
+# Model Class name
+modelClass: Waka\Crsm\Models\Mission
+
+# Toolbar widget configuration
+# toolbar:
+#     # Partial for toolbar buttons
+#     buttons: reorder_toolbar
+
+# Pour la reorder en modal
+modelSource: Waka\Crsm\Models\Project

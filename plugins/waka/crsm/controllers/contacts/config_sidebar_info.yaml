@@ -1,0 +1,86 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+model: contact
+
+fields:
+    name:
+        value: name
+        type: label
+        cssClass: sb-h1 br-p
+    email:
+        label: e-mail
+        value: email
+
+
+    section_client:
+        label: Client
+        type: section
+    client_name:
+        label: Nom du client
+        value: client.name
+    client_slug:
+        label: Slug client
+        value: client.slug
+    TotalProjectsRunning:
+        label: Nb projets actifs
+        value: client.totalProjectsRunning
+    acces_client:
+        label: Fiche client
+        type: link
+        racine: waka/crsm/clients/update/
+        value: client.id
+    # information:
+    #     labelFrom: name
+    #     headingLevel: h2
+    #     class: br-a
+    #     type: title
+
+    # listProject:
+    #     label: waka.crsm::lang.project.theproject
+    #     headingLevel: h4
+    #     type: info_list
+    #     icon: icon-briefcase
+    #     fields:
+    #         projectPeriodTotal:
+    #             label: waka.crsm::lang.project.projectPeriodTotal
+    #         mensuelPeriod:
+    #             label: waka.crsm::lang.project.mensuelPeriod
+    #         total:
+    #             label: Total Année N
+    #             type: label_calcul
+    #             row_var1: projectPeriodTotal
+    #             row_var2: mensuelPeriodTotal
+    #             operator: add
+    #         mensuelPeriodTotal:
+    #             label: Maintenance année N+1
+    # listCLient:
+    #     label: waka.crsm::lang.client.client
+    #     headingLevel: h4
+    #     type: info_list
+    #     icon: icon-building
+    #     fields:
+    #         client.name:
+    #             label: waka.crsm::lang.client.name
+    #         client.country.name:
+    #             label: waka.crsm::lang.client.country
+    # buttonClient:
+    #     label:  waka.crsm::lang.contact.goto_client_form
+    #     type: button_url
+    #     url: waka/crsm/clients/update/
+    #     modelid: client.id
+    #     icon: icon-external-link-square
+    #     class: btn
+
+    # montages:
+    #     type: model_list
+    #     headingLevel: h4
+    #     icon: icon-object-group
+    #     label: waka.crsm::lang.contact.photo_client
+    #     dataHandler: onCallPopupModelCloudis
+    #     modelId: id
+        
+
+
+

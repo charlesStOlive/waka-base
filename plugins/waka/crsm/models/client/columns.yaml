@@ -1,0 +1,45 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id: 
+        label: ID
+        invisible: true
+        width: 20px
+    name:
+        label: waka.crsm::lang.client.name
+        searchable: true
+    action:
+        type: waka-btn-actions
+        icon: icon-wrench
+        clickable: false
+        searchable: false
+        sortable: false
+        width: 25px
+    sector:
+        label: waka.crsm::lang.client.sector
+        relation: sector
+        select: name
+        searchable: true
+    logo:
+        label: waka.crsm::lang.client.logo
+        sortable: false
+        type: partial
+        path: $/waka/crsm/models/client/_column_image.htm
+    primary_color:
+        label: waka.crsm::lang.client.primary_color 
+        type: colorpicker
+        clickable: false
+
+    totalProjectsRunning:
+        label: waka.crsm::lang.project.totalProjectsRunning
+        sortable: false
+
+    totalProjects:
+        label: waka.crsm::lang.project.totalProjects
+        sortable: false
+        
+    updated_at:
+        label: waka.utils::lang.global.updated_at
+        type: timetense

@@ -1,0 +1,29 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: waka.crsm::lang.mission.name
+    period:
+        label: waka.crsm::lang.mission.period
+        type: balloon-selector
+        default: 1
+    qty:
+        label: waka.crsm::lang.mission.qty
+        span: auto
+    amount:
+        label: waka.crsm::lang.mission.unit_amount
+        span: auto
+    total: 
+        label: waka.crsm::lang.mission.total
+        dependsOn:
+            -  qty
+            -  amount     
+    description:
+        label: waka.crsm::lang.mission.description
+        type: markdown
+    is_template:
+        label: waka.crsm::lang.mission.is_template
+        type: checkbox
+        default: 0

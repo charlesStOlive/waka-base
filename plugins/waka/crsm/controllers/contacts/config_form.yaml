@@ -1,0 +1,32 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Contact
+
+# Model Form Field configuration
+form: $/waka/crsm/models/contact/fields.yaml
+
+# Model Class name
+modelClass: Waka\Crsm\Models\Contact
+
+# Default redirect location
+defaultRedirect: waka/crsm/contacts
+
+# Create page
+create:
+    title: Create Contact
+    redirect: waka/crsm/contacts/update/:id
+    redirectClose: waka/crsm/contacts
+    form: $/waka/crsm/models/contact/create_fields.yaml
+
+# Update page
+update:
+    title: Edit Contact
+    redirect: waka/crsm/contacts
+    redirectClose: waka/crsm/contacts
+
+# Preview page
+preview:
+    title: Preview Contact

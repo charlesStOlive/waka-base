@@ -1,0 +1,6 @@
+<!--<a href="<?= Backend::url('waka/crsm/projects/reorder/'.$this->params[0]) ?>"
+    class="btn btn-sm  btn-secondary oc-icon-list-ol ">Réordonner</a>-->
+<button class="btn btn-secondary btn-sm oc-icon-list-ol" data-control="popup" data-handler="onLoadReorder"
+    data-request-data="manageId:<?=$this->params[0]?>" data-size="large">
+    Réordonner
+</button>

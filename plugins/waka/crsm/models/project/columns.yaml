@@ -1,0 +1,35 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id: 
+        label: ID
+        invisible: true
+        width: 20px
+    action:
+        type: waka-btn-actions
+        icon: icon-wrench
+        clickable: false
+        searchable: false
+        sortable: false
+        width: 25px
+    
+    name:
+        label: waka.crsm::lang.project.name
+        searchable: true
+    project_state:
+        label: waka.crsm::lang.project.project_state
+        type: partial
+        path: $/waka/crsm/models/project/_column_state.htm
+        sortable: false
+    client_name:
+        label: waka.crsm::lang.project.client
+        relation: client
+        select: name
+    closed_at:
+        label: waka.crsm::lang.project.closed_at
+        type: timetense
+    updated_at:
+        label: waka.utils::lang.global.updated_at
+        type: timetense

@@ -1,0 +1,25 @@
+1.0.1: 
+  - 'Start version of crsm'
+  - create_clients_table.php
+  - create_contacts_table.php
+  - create_countries_table.php
+  - create_sectors_table.php
+  - extend_users_table.php
+  - create_missions_table.php
+  - create_project_states_table.php
+  - create_projects_table.php
+  - create_periods_table.php
+1.0.2:
+  - 'injection de base'
+  - seed_bases.php
+1.0.3:
+  - 'injection clients'
+  - seed_clients.php
+1.0.4:
+  - 'injection des data cms'
+  - seed_wcms.php
+1.0.5:
+  - 'injection projets'
+  - seed_projects.php
+
+  

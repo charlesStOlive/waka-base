@@ -1,0 +1,30 @@
+[submodule "plugins/waka/utils"]
+	path = plugins/waka/utils
+	url = https://github.com/charlesStOlive/oc-utils.git
+[submodule "plugins/waka/informer"]
+	path = plugins/waka/informer
+	url = https://github.com/charlesStOlive/oc-informer.git
+[submodule "plugins/waka/cloudis"]
+	path = plugins/waka/cloudis
+	url = https://github.com/charlesStOlive/oc-cloudis.git
+[submodule "plugins/waka/importexport"]
+	path = plugins/waka/importexport
+	url = https://github.com/charlesStOlive/oc-import-export.git
+[submodule "plugins/martin/forms"]
+	path = plugins/martin/forms
+	url = https://github.com/charlesStOlive/october-plugin-forms.git
+[submodule "plugins/waka/mailer"]
+	path = plugins/waka/mailer
+	url = https://github.com/charlesStOlive/oc-mailer.git
+[submodule "plugins/waka/charter"]
+	path = plugins/waka/charter
+	url = https://github.com/charlesStOlive/oc-charter.git
+[submodule "plugins/waka/pdfer"]
+	path = plugins/waka/pdfer
+	url = https://github.com/charlesStOlive/oc-pdfer.git
+[submodule "plugins/waka/worder"]
+	path = plugins/waka/worder
+	url = https://github.com/charlesStOlive/oc-worder.git
+[submodule "plugins/waka/mailtoer"]
+	path = plugins/waka/mailtoer
+	url = https://github.com/charlesStOlive/oc-mailtoer.git

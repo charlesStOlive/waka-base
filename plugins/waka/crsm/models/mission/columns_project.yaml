@@ -1,0 +1,26 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    sort_order:
+        label: waka.utils::lang.global.sort_order
+        invisible: true
+    name:
+        label: waka.crsm::lang.mission.name
+        searchable: true
+    qty:
+        label: waka.crsm::lang.mission.qty
+    amount:
+        label: waka.crsm::lang.mission.unit_amount
+    period_label:
+        label: waka.crsm::lang.mission.period
+        relation: period
+        select: name
+    
+    total:
+        label: total
+        type: waka-calcul
+        var1: qty
+        operator: multiply
+        var2: amount

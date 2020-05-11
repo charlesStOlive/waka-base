@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Mission
+
+# Model Form Field configuration
+form: $/waka/crsm/models/mission/fields.yaml
+
+# Model Class name
+modelClass: Waka\Crsm\Models\Mission
+
+# Default redirect location
+defaultRedirect: waka/crsm/missions
+
+# Create page
+create:
+    title: Create Mission
+    redirect: waka/crsm/missions/update/:id
+    redirectClose: waka/crsm/missions
+
+# Update page
+update:
+    title: Edit Mission
+    redirect: waka/crsm/missions
+    redirectClose: waka/crsm/missions
+
+# Preview page
+preview:
+    title: Preview Mission

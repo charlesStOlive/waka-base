@@ -1,0 +1,50 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+fields:
+    name:
+        label: waka.crsm::lang.sector.name
+    slug:
+        label: waka.utils::lang.global.slug
+        preset: name
+tabs: 
+    waka.crsm::lang.sector.content: icon-pencil
+    waka.crsm::lang.sector.crea: icon-paint-brush
+    fields:
+        content:
+            tab: waka.crsm::lang.sector.content.title
+            label: waka.crsm::lang.sector.description
+            prompt: Contenu
+            type: repeater
+            form:
+                fields:
+                    code:
+                        label: waka.crsm::lang.sector.content.code
+                        type: dropdown
+                        options: contentCodeList
+                    text:
+                        label: waka.crsm::lang.sector.content.text
+                        type: textarea
+                        span: auto
+                    text_html:
+                        label: waka.crsm::lang.sector.content.text_html
+                        type: richeditor
+                        span: auto
+
+        main_image:
+            tab: waka.crsm::lang.sector.crea
+            label: waka.crsm::lang.sector.main_image
+            type: cloudifileupload
+            mode: image
+            imageHeight: 200
+            imageWidth: 400
+            span: auto
+        masque:
+            tab: waka.crsm::lang.sector.crea
+            label: waka.crsm::lang.sector.main_image
+            type: cloudifileupload
+            mode: image
+            imageHeight: 200
+            imageWidth: 400
+            span: auto
+            

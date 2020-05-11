@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Mission Template
+
+# Model Form Field configuration
+form: $/waka/crsm/models/mission/fields_template.yaml
+
+# Model Class name
+modelClass: Waka\Crsm\Models\Mission
+
+# Default redirect location
+defaultRedirect: waka/crsm/missiontemplates
+
+# Create page
+create:
+    title: Create Mission Template
+    redirect: waka/crsm/missiontemplates/update/:id
+    redirectClose: waka/crsm/missiontemplates
+
+# Update page
+update:
+    title: Edit Mission Template
+    redirect: waka/crsm/missiontemplates
+    redirectClose: waka/crsm/missiontemplates
+
+# Preview page
+preview:
+    title: Preview Mission Template

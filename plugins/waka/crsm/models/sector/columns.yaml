@@ -1,0 +1,17 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id: 
+        label: ID
+        invisible: true
+        width: 20px
+    name:
+        label: waka.crsm::lang.country.name
+        searchable: true
+    slug:
+        label: waka.utils::lang.global.slug
+        clickable: false
+
+

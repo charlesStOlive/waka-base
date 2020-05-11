@@ -1,0 +1,31 @@
+text:
+    name: waka.crsm::lang.repeater.text.name
+    description: waka.crsm::lang.repeater.text.description
+    icon: icon-align-left
+    fields:
+        code:
+            label: waka.crsm::lang.repeater.code
+        text:
+            label: waka.crsm::lang.repeater.text.text
+            type: markdown
+            size: huge
+            mode: split
+
+
+list:
+    name: waka.crsm::lang.repeater.list.name
+    description: waka.crsm::lang.repeater.list.description
+    icon: icon-list-ul
+    fields:
+        code:
+            label: waka.crsm::lang.repeater.code
+            span: full
+        item:
+            type: repeater
+            prompt: waka.crsm::lang.repeater.list.prompt
+            span: full
+            form:
+                fields:
+                    line:
+                        label: waka.crsm::lang.repeater.list.line
+                        span: full

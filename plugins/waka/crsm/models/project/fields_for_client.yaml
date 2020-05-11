@@ -1,0 +1,116 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: waka.crsm::lang.project.name
+
+    # contact@create:
+    #     label: waka.crsm::lang.project.contact
+    #     type: dropdown
+    #     placeholder: waka.crsm::lang.project.contact
+    #     options: listContacts
+    
+    cp@create:
+        label: waka.crsm::lang.project.cp
+        type: relation
+        placeholder: waka.crsm::lang.project.cp_placeholder
+        select: first_name
+    
+    project_state:
+        label: waka.crsm::lang.project.project_state
+        type: balloon-selector
+        options: listProjectState
+        default: 1
+
+    description:
+        type: richeditor
+        tab: waka.crsm::lang.project.description
+
+# tabs:
+#     icons:
+#         waka.crsm::lang.project.description: icon-briefcase
+#         waka.crsm::lang.project.team: icon-users
+#         waka.crsm::lang.project.brief: icon-info-circle
+#         waka.crsm::lang.project.crea: icon-magic
+    
+#     fields:
+#         picture_1@update:
+#             tab: waka.crsm::lang.project.crea
+#             label: waka.crsm::lang.client.logo
+#             type: fileupload
+#             mode: image
+#             thumbOptions:
+#                 mode: fit
+#             imageWidth: 300
+#             imageHeight: 150
+#             span: storm
+#             cssClass: col-sm-4 col-xs-12
+#         picture_2@update:
+#             tab: waka.crsm::lang.project.crea
+#             label: waka.crsm::lang.client.logo
+#             type: fileupload
+#             mode: image
+#             thumbOptions:
+#                 mode: fit
+#             imageWidth: 300
+#             imageHeight: 150
+#             span: storm
+#             cssClass: col-sm-4 col-xs-12
+#         picture_3@update:
+#             tab: waka.crsm::lang.project.crea
+#             label: waka.crsm::lang.client.logo
+#             type: fileupload
+#             mode: image
+#             thumbOptions:
+#                 mode: fit
+#             imageWidth: 300
+#             imageHeight: 150
+#             span: storm
+#             cssClass: col-sm-4 col-xs-12
+#         montages_list@update:
+#             tab: waka.crsm::lang.project.crea
+#             label: waka.crsm::lang.client.montage_list
+#             type: montagelist
+#             span: full
+#         name@update:
+#             label: waka.crsm::lang.project.name
+#             tab: waka.crsm::lang.project.description
+
+#         missions@update:
+#             type: partial
+#             path: field_missions
+#             tab: waka.crsm::lang.project.description
+
+#         description@update:
+#             label: waka.crsm::lang.project.description
+#             type: richeditor
+#             tab: waka.crsm::lang.project.brief
+
+
+#         client@update:
+#             label: waka.crsm::lang.client.name
+#             type: relation
+#             placeholder: waka.crsm::lang.project.client_placeholder
+#             tab: waka.crsm::lang.project.team
+
+#         contact@update:
+#             label: waka.crsm::lang.project.contact
+#             type: dropdown
+#             placeholder: waka.crsm::lang.project.contact
+#             options: listContacts
+#             tab: waka.crsm::lang.project.team
+        
+#         cp@update:
+#             label: waka.crsm::lang.project.cp
+#             type: relation
+#             placeholder: waka.crsm::lang.project.cp_placeholder
+#             select: first_name
+#             tab: waka.crsm::lang.project.team
+
+        
+        
+        
+
+ 

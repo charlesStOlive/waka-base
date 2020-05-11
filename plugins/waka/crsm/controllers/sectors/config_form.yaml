@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Sector
+
+# Model Form Field configuration
+form: $/waka/crsm/models/sector/fields.yaml
+
+# Model Class name
+modelClass: Waka\Crsm\Models\Sector
+
+# Default redirect location
+defaultRedirect: waka/crsm/sectors
+
+# Create page
+create:
+    title: Create Sector
+    redirect: waka/crsm/sectors/update/:id
+    redirectClose: waka/crsm/sectors
+
+# Update page
+update:
+    title: Edit Sector
+    redirect: waka/crsm/sectors
+    redirectClose: waka/crsm/sectors
+
+# Preview page
+preview:
+    title: Preview Sector

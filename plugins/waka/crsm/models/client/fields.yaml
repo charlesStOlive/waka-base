@@ -1,0 +1,105 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: waka.crsm::lang.client.name
+        span: storm
+        cssClass: col-sm-6 col-xs-12
+    slug:
+        label: waka.utils::lang.global.slug
+        preset: name
+        span: storm
+        cssClass: col-sm-6 col-xs-12
+    sector:
+        label: waka.crsm::lang.client.sector
+        span: storm
+        cssClass: col-sm-6 col-xs-12
+        type: relation
+        defaultFrom: defaultCountry
+
+tabs:
+    icons:
+        waka.crsm::lang.client.contacts: icon-address-book
+        waka.crsm::lang.client.colors: icon-magic
+        waka.crsm::lang.client.details: icon-building
+        waka.crsm::lang.client.projects: icon-briefcase
+    fields:
+        montages_list:
+            tab: waka.crsm::lang.client.colors
+            label: waka.crsm::lang.client.montage_list
+            type: montagelist
+            span: full
+            
+        contacts@update:
+            tab: waka.crsm::lang.client.contacts
+            type: partial
+            path: field_contacts
+        projects@update:
+            tab: waka.crsm::lang.client.projects
+            type: partial
+            path: field_projects
+
+
+        
+        
+        logo:
+            tab: waka.crsm::lang.client.colors
+            label: waka.crsm::lang.client.logo
+            type: cloudifileupload
+            mode: image
+            span: storm
+            cssClass: col-sm-4 col-xs-12
+            imageHeight: 100
+            imageWidth: 260
+            
+        
+        primary_color:
+            tab: waka.crsm::lang.client.colors
+            label: waka.crsm::lang.client.primary_color
+            type: colorpickercloudi
+            span: storm
+            cssClass: col-sm-4 col-xs-12
+            colorsFrom: logo
+            dependsOn: logo
+
+        secondary_color:
+            tab: waka.crsm::lang.client.colors
+            label: waka.crsm::lang.client.secondary_color
+            type: colorpickercloudi
+            span: storm
+            cssClass: col-sm-4 col-xs-12
+            colorsFrom: logo
+            dependsOn: logo
+        
+        nb_collab:
+            tab: waka.crsm::lang.client.details
+            label: waka.crsm::lang.client.nb_collab
+            span: auto
+        
+        address:
+            tab: waka.crsm::lang.client.details
+            label: waka.crsm::lang.client.address
+            span: auto
+        cp:
+            tab: waka.crsm::lang.client.details
+            label: waka.crsm::lang.client.cp
+            span: auto 
+        city:
+            tab: waka.crsm::lang.client.details
+            label: waka.crsm::lang.client.city
+            span: auto
+        is_ex:
+            tab: waka.crsm::lang.client.details
+            label: waka.utils::lang.global.is_ex
+            span: auto  
+            type: checkbox
+        country:
+            tab: waka.crsm::lang.client.details
+            label: waka.crsm::lang.client.country
+            span: auto 
+            type: relation
+            defaultFrom: defaultCountry
+        
+

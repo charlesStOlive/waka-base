@@ -1,0 +1,16 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+clientmontage:
+    label: ClientMontage
+    view:
+        form: $/waka/crsm/models/clientmontage/fields_for_relation_montage.yaml
+        toolbarButtons: create|update|link|unlink
+    manage:
+        form: $/waka/crsm/models/clientmontage/fields_for_relation_montage.yaml
+        list: $/waka/crsm/models/clientmontage/columns.yaml
+        showSearch: true
+
+
+

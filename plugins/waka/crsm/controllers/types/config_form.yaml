@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Type
+
+# Model Form Field configuration
+form: $/waka/crsm/models/type/fields.yaml
+
+# Model Class name
+modelClass: Waka\Crsm\Models\Type
+
+# Default redirect location
+defaultRedirect: waka/crsm/types
+
+# Create page
+create:
+    title: Create Type
+    redirect: waka/crsm/types/update/:id
+    redirectClose: waka/crsm/types
+
+# Update page
+update:
+    title: Edit Type
+    redirect: waka/crsm/types
+    redirectClose: waka/crsm/types
+
+# Preview page
+preview:
+    title: Preview Type

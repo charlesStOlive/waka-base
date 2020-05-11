@@ -1,0 +1,33 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    amount:
+        label: waka.crsm::lang.mission.amount
+        readOnly: true
+        span: auto
+    # pivot[own_amount]:
+    #     label: waka.crsm::lang.mission.own_amount
+    #     type: checkbox
+    #     span: auto
+    pivot[amount]:
+        label: waka.crsm::lang.mission.amount
+        span: auto
+        defaultFrom: amount
+    pivot[qty]:
+        label: waka.crsm::lang.mission.qty
+        span: auto
+    # pivot[own_description]:
+    #     label: waka.crsm::lang.mission.own_description
+    #     type: checkbox
+    pivot[description]:
+        label: waka.crsm::lang.mission.description
+        type: richeditor
+        defaultFrom: description
+    _showdescription:
+        label: waka.crsm::lang.mission.show_origin_description
+    description:
+        label: waka.crsm::lang.mission.description
+        type: richeditor
+        readOnly: true

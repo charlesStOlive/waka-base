@@ -1,0 +1,33 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+
+
+
+contacts:
+    label: waka.crsm::lang.contact.name
+    manage:
+        form: $/waka/crsm/models/contact/fields.yaml
+        list: $/waka/crsm/models/contact/fields.yaml
+    view:
+        
+        list: $/waka/crsm/models/contact/columns.yaml
+        recordUrl: waka/crsm/contacts/update/:id
+        toolbarButtons: create|delete
+        defaultSort:
+            column: sort_order
+            direction: asc
+
+
+projects:
+    manage:
+        form: $/waka/crsm/models/project/fields_for_client.yaml
+    label: waka.crsm::lang.project.name
+    view:
+        list: $/waka/crsm/models/project/columns.yaml
+        recordUrl: waka/crsm/projects/update/:id
+        toolbarButtons: create|delete
+
+
+

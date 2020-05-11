@@ -1,0 +1,22 @@
+<?= Form::open() ?>
+<div class="modal-header">
+</div>
+<div class="modal-body">
+
+    <?php if ($this->fatalError): ?>
+    <p class="flash-message static error"><?= $fatalError ?></p>
+    <?php endif ?>
+
+    <div class="form">
+        <?= $this->reorderRender() ?>
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <button type="submit" data-request="onCloseReorder" data-request-data="redirect:0, manageId:<?=$manageId?>"
+        data-popup-load-indicator class="btn btn-primary">
+        Terminer
+    </button>
+</div>
+<?= Form::close() ?>
